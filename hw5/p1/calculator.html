@@ -1,0 +1,29 @@
+<!--
+
+adder2.html
+
+Enhance adder.html to add:
+(1) Use a textbox to show the result.
+(2) Support real number.
+
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A Simple Calculator</title>
+	</head>
+	<script type="text/javascript" src="./calculate.js">
+	</script>
+	<body>
+		<form id="form" onsubmit="return false">
+			Number 1: <input type="text" id="num1"><br/><br/>
+			Number 2: <input type="text" id="num2"><br/><br/>
+			<input onclick="add()" type="submit" value = "Add" id="addBtn">
+			<input onclick="sub()" type="submit" value = "Sub" id="subBtn">
+			<input onclick="mul()" type="submit" value = "Mul" id="mulBtn">
+			<input onclick="div()" type="submit" value = "Div" id="divBtn"><br/><br/>
+			Result: <input type="text" id="result"><br/><br/>
+		</form>	
+	</body>
+</html>
