@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS372 Search</title>
+    <style>
+        form { text-align: center; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./search.js"></script>
+</head>
+<body>
+    <form onsubmit="return isEmpty()" action="index.js" method="get"> 
+        <p>
+            <img src="./CS372_Search.png" alt="CS372 Search"
+            style="width:562px; height:82px;"
+            id="CS372_Search">
+        </p>
+        <p>
+            <input type="text" 
+            name="q" id="search_field"
+            style="width: 600px; height: 30px; font-size:20px">
+        </p>
+        <p>
+            <input type="submit" value="CS372 Search"
+            style="height: 30px; width:180px; font-size:20px"
+            name="search_btn" id="search_btn" onclick="getTemp(event)">
+            <input type="button" value="I'm Feeling Lucky"
+            style="height: 30px; width: 200px; font-size:20px"
+            name="lucky_btn" id="lucky_btn" onclick="feelingLucky()">
+        </p>
+        <p id="message" name="msg"></p>
+    </form>
+</body>
+</html>
